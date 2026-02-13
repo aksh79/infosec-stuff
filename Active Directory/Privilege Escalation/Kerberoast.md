@@ -1,5 +1,5 @@
 #powerview #powershell #ldap #rubeus #mimikatz #impacket 
-- ST can be requested by any user for any service if it's [SPN](Active%20Directory/AD%20Concepts/Services#SPN) is registered in the domain.
+- ST can be requested by any user for any service if it's [SPN](../AD%20Basics/Services.md#SPN) is registered in the domain.
 - STs are encrypted with the service account which runs the service.
 - Hence, we can try to crack the password of the service user account.
 - In case of managed service accounts, the password is of 120 characters and changes every month, hence it is not possible to crack their password.

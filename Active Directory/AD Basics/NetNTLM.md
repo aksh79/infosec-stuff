@@ -11,9 +11,9 @@
 - `CHALLENGE`
 - `AUTHENTICATE`
 ### One
-- After initiating the security context using `InitializeSecurityContext` via [NTLM SSP](Authentication#NTLM%20SSP), client sends a `NEGOTIATE` message to the server, with security options and NTLM version to use.
+- After initiating the security context using `InitializeSecurityContext` via [NTLM SSP](Authentication.md#NTLM%20SSP), client sends a `NEGOTIATE` message to the server, with security options and NTLM version to use.
 ### Two
-- The server generates a security challenge by calling `AcceptSecurityContext` from [NTLM SSP](Authentication#NTLM%20SSP) and sends a challenge message back to the client with NTLM version confirmation, and information such as computer name, version and the domain name. 
+- The server generates a security challenge by calling `AcceptSecurityContext` from [NTLM SSP](Authentication.md#NTLM%20SSP) and sends a challenge message back to the client with NTLM version confirmation, and information such as computer name, version and the domain name. 
 ### Three
 - The client receives the challenge from the server and passes it back to `InitializeSecurityContext` to calculate a response using the user's password (NT Hash)
 - Client creates a `session key` and encrypts it with another key knows as `session base key` derived from NT Hash of the user.

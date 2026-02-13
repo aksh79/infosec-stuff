@@ -7,13 +7,13 @@
 crackmapexec <protocol> <ip>
 ```
 - Bruteforce WinRM password using wordlist
-	```bash
-	crackmapexec winrm <ip> -u username -p /wordlist/password
-	```
+```bash
+crackmapexec winrm <ip> -u username -p /wordlist/password
+```
 - Command execution after bruteforce
-	```bash
-	crackmapexec winrm <ip> -u <username> -p <password> -x "command"
-	```
+```bash
+crackmapexec winrm <ip> -u <username> -p <password> -x "command"
+```
 
 ### Evil-winrm.rb
 - Ruby script for getting a powershell prompt with winrm.

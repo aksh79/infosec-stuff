@@ -2,7 +2,7 @@
 # SAM Database
 - Local database of local users and their credentials. 
 - Cannot be read by any user while windows is running.
-- To dump credentials from the SAM database, SYSTEM is also required. [Credentials](../AD%20Concepts/Credentials.md)
+- To dump credentials from the SAM database, SYSTEM is also required. [Credentials](../AD%20Basics/Credentials.md)
 ### Metasploit
 - Metasploit's `hashdump` can be used to dump the SAM database.
 - Requires administrative privileges.

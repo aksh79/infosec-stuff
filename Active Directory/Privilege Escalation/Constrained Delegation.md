@@ -10,7 +10,7 @@
 ### S4U2Proxy
 This extension allows a service to request another service on behalf of the user by using `ST` instead of `TGT`.
 The service can only ask for impersonation `ST` for certain services defined in one of the following ways:
-- **Classic Constrained Delegation**: `msDS-AllowedToDelegateTo` attribute of the service account. It contains [SPN](../AD%20Concepts/Services.md) of the services for which the service account can ask ST for. To edit this parameter, `SeEnableDelegationPrivilege` priv is required.
+- **Classic Constrained Delegation**: `msDS-AllowedToDelegateTo` attribute of the service account. It contains [SPN](../AD%20Basics/Services.md) of the services for which the service account can ask ST for. To edit this parameter, `SeEnableDelegationPrivilege` priv is required.
 - **Resource Based Constrained Delegation**: The service account is mentioned in the `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute of the target service for which the service account will ask ST for.
 ---
 Constrained Delegation works in one of the two ways:

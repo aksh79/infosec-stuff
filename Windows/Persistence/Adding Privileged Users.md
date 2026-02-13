@@ -14,7 +14,7 @@ net localroup "Remote Management users" backdoor /add
 ```
 
 - By default, the UAC strips the remote user of it's administrative privs, this can be disabled. [LocalAccountTokenFilterPolicy](Policies#LocalAccountTokenFilterPolicy)
-- As a member of "Backup Operators", we can now save system and sam hives from the regsitery and use Impacket to get the system hash. [secretsdump.py](Impacket#secretsdump.py)
+- As a member of "Backup Operators", we can now save system and sam hives from the regsitery and use Impacket to get the system hash. [secretsdump.py](../../Cheatsheet/Impacket.md#secretsdump.py)
 
 ### Assigning privileges to users.
 - By default, the 'backup Operators' have two privileges:

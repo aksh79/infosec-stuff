@@ -82,7 +82,7 @@ In 64 bit version of windows 8 and earlier, only 8 TB of user and kernel space w
 - Built on top of enhanced version of COM.
 # Windows API/Win32 API
 ### Getting System Information
-```c
+```C
 #include <stdio.h>
 #include <Windows.h>
 #include <stdlib.h>

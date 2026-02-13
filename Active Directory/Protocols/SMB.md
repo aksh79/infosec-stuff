@@ -17,7 +17,7 @@ Folders that a machine shares in order to be accessed by other computer/users.
 	- List files within a share
 	- Start/stop services
 ### SYSVOL
-- A special share in domain controllers that stores [Group Policy](../AD%20Concepts/Group%20Policy.md), scripts, junction point.
+- A special share in domain controllers that stores [Group Policy](../AD%20Basics/Group%20Policy.md), scripts, junction point.
 ### NETLOGON
 - This share is used to store logon scripts (executes when user logs in) and other files.
 

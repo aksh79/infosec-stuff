@@ -1,5 +1,5 @@
 #mimikatz 
-[LSASS](Credentials#LSASS)
+[LSASS](../AD%20Basics/Credentials.md#LSASS)
 - `lsass.exe` is a protected process. 
 ### Disabling lsass protection
 - Microsoft made lsass.exe a protected process so that it can't be used to dump credentials.

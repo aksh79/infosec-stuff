@@ -71,8 +71,8 @@ sequenceDiagram
 ```
 1. `AS-REQ`: Client sends the timestamp encrypted with it's [Kerberos Keys](Users.md#Kerberos%20Keys). This is called pre-authentication, and sometimes it is not required.
 2. `AS-REP`: The server responds back with two information. TGT encrypted with KDC key and client data encrypted with client key.
-3. `Negotiation`: Using [SPNEGO](Authentication#SPNEGO), client negotiates the authentication protocol (either NTLM or Kerberos).
-4. `TGS-REQ (TGT)`: Client sends the TGT and the [SPN](Active%20Directory/AD%20Concepts/Services#SPN) of the target service, to the KDC and asks for the service ticket.
+3. `Negotiation`: Using [SPNEGO](Authentication.md#SPNEGO), client negotiates the authentication protocol (either NTLM or Kerberos).
+4. `TGS-REQ (TGT)`: Client sends the TGT and the [SPN](Services.md#SPN) of the target service, to the KDC and asks for the service ticket.
 5. `TGS-REP (ST)`: KDC decrypts the TGT using it's key and gets access to the username and session key. KDC uses the session key to decrypt the username and verify if everything is correct. The KDC then sends two information of the client, ST of the request service, encrypted with the the key of the service user and the client data encrypted with the session key.
 6. `AP-REQ (ST)`: Client sends the ST received in the last step to the service. The service uses it's key and decrypts the ST and gets the service session key which is used to establish secure communication. It also gets the PAC data after decrypting the ST, which specifies if the user has the privilege to access the resource. 
 7. `KERB-VRFY-PAC-REQ`: (OPTIONAL). This step only occurs when the the service wants to validate the PAC. It sends the PAC to the KDC to verify it's authenticity, as it is signed using KDC keys.
@@ -99,6 +99,6 @@ Uses `Service For User (S4U)` extension that allows a service to impersonate a u
 
 ### Anti Delegation Measures
 To prevent delegations, two methods can be used:
-- `NOT_DELEGATED` flag in [User Account Control](Active%20Directory/AD%20Concepts/Users#User%20Account%20Control) attribute.
+- `NOT_DELEGATED` flag in [User Account Control](Users.md#User%20Account%20Control) attribute.
 - User belongs to `Protected Groups`.
 

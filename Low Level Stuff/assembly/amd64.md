@@ -142,7 +142,7 @@ mov rax, 0xdeadbeef
 add rax, 0x10
 sub rax, [rbx + rcx * 12]
 ```
-## multiplication
+## mul
 ```nasm
 ; imul
 ; signed multiply
@@ -170,7 +170,7 @@ imul reg, r/mX, imm
 ; r32 = r/m32 * 32-bit immediate
 : r64 = r/m64 * (32-bit immediate sign-extended to 64 bits)
 ```
-## division
+## div
 ```nasm
 ; div
 ; unsigned divide
