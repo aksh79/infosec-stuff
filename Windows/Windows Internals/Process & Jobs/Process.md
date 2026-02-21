@@ -21,7 +21,7 @@
 	* `Threads`: Number of threads executing the code.
 	* `Platform`: Tells if the process is 64 bit or 32 bit.
 # Virtual Memory
--  Every process has virtual address space.
+- Every process has virtual address space.
 - Process sees a flat linear memory assigned to it, but the virtual memory is mapped to different places in physical memory or on disk (This is taken care by memory manager).
 -  Memory is managed in chunks called pages:
 	- Default size of 4kb
@@ -66,9 +66,11 @@ In 64 bit version of windows 8 and earlier, only 8 TB of user and kernel space w
 		- Running - Thread is currently executing.
 		- Ready - Wants to execute code but CPU is busy running other threads.
 		- Waiting - Thread doesn't want to execute, as it is waiting for some data or IO processing to complete.
-# System Architecture
+- Thread Access Modes:
+	- User Mode - access to non-operating system code and data, cannot crash system.
+	- Kernel Mode - Privileged mode, acess to all resources, can crash system.
+# Process Architecture
 ![sys_arch1](_assets/sys_arch1.png)
-![sys_arch2](_assets/sys_arch2.png)
 # Windows Subsystem APIs
 ### Windows API
 - Also called Win32 API
@@ -227,51 +229,15 @@ void structures() {
 ```
 ### Windows Version
 - Windows Numeric Version:
-        - Windows NT (4.0)
-        - Windows 2000 (5.0)
-        - Windows XP (5.1)
-        - Windows Server 2003, 2003 R2 (5.2)
-        - Windows Vista, Server 2008 (6.0)
-        - Windows 7, Server 2008 (6.1)
-        - Windows 8, Server 2012 (6.2)
-        - Windows 8.1, Server 2012 R2 (6.3)
-        - Windows 10, Server 2016 (10)
-- `GetVersionEx()` function was used traditionally to get the version information, but is now deprecated.
-- New helper functions defined in `versionhelpers.h` is used now:
-        - `IsWindowsXPSP3OrGreater()`
-        - `IsWindows10OrGreater()`
-        - `IsWindowsServer()`
-- These functions are implemented with `VerifyVersionInfo()`
-- It requires manifest file to get correct information
-```c
-void winversion() {
-    // deprecated but can be enabled with macro
-    OSVERSIONINFO vi = { sizeof(vi) };
-    GetVersionEx(&vi);
-    printf("%u.%u.%u\n", vi.dwMajorVersion, vi.dwMajorVersion, vi.dwBuildNumber);
-    BOOL ans;
-    if (ans = IsWindows7OrGreater()) {
-        printf("7 and greater");
-    }
-}
-```
-### System Information
-- `GetNativeSysteminfo()` & `GetSysteminfo()` can be used to query information about the operating system and architecture.
-- `GetPerformanceInformation()` from `psapi.h` can be used to get information about processes and threads
-```c
-void moresysteminfo() {
-    PERFORMANCE_INFORMATION pi; // perfomance information object
-    for (;K32GetPerformanceInfo(&pi, sizeof(pi));) { // infinite loop that updates the pi object
-        printf("Process: %u\n",pi.ProcessCount);
-        printf("Thread: %u", pi.ThreadCount);
-        printf("\r\x1b[2A");
-        // \r: return cariage: moves the cursor to the begining of the line
-        // \x1b: ESC: Suggests start of an escape sequence
-		// [2A: moves the cursor 2 lines up
-        Sleep(1000);
-    }
-}
-```
+	- Windows NT (4.0)
+	- Windows 2000 (5.0)
+	- Windows XP (5.1)
+	- Windows Server 2003, 2003 R2 (5.2)
+	- Windows Vista, Server 2008 (6.0)
+	- Windows 7, Server 2008 (6.1)
+	- Windows 8, Server 2012 (6.2)
+	- Windows 8.1, Server 2012 R2 (6.3)
+	- Windows 10, Server 2016 (10)
 # Objects & Handles
 ### Kernel Objects
 - Windows is object oriented operating system.
@@ -545,14 +511,14 @@ void duphandle() {
 - The `User` and `GDI` objects are managed by `Win32k.sys`. These objects are responsible for *User*interface and *G*raphics *D*evice *I*nterface.
 - The API calls for these objects go through `user32.dll` and `gdi32.dll` and not through `ntdll.dll` as they invoke the sysnter/syscall directly.
 - Handles for User objects are reffered by:
-        - `HNWD` for Windows
-        - `HMENU` for Menus
-        - `HHOOK` for Hooks
+	- `HNWD` for Windows
+	- `HMENU` for Menus
+	- `HHOOK` for Hooks
 - These objects have no reference counting, and they are private to a window station.
 - But these handles have a much global scope, compared to a normal kernel handle which is private to a process.
 - Handles for GDI objects are referred by:
-        - `HDC` for device context
-        - `HPEN` for pen
-        - `HBRUSH` for brush
-        - `HBITMAP` for a bitmap
+	- `HDC` for device context
+	- `HPEN` for pen
+	- `HBRUSH` for brush
+	- `HBITMAP` for a bitmap
 - These are private to a process but like User objects, they don't have reference counting
