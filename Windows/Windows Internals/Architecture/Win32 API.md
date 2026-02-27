@@ -1,6 +1,6 @@
 # Windows API/Win32 API
 ### Getting System Information
-```C
+```c
 #include <stdio.h>
 #include <Windows.h>
 #include <stdlib.h>

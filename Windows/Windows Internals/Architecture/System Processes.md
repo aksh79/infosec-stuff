@@ -1,0 +1,26 @@
+- Idle Process (PID - 0)
+	- Does not have address space.
+	- Uses to calculate idle time.
+	- Threads used by this process == Number of logical processor.
+- System Process (PID 4)
+	- Everything happening in kernel space.
+- smss.exe (Session Manager)
+	- Manages session.
+	- First user-mode process.
+	- Creates `winlogon` and `csrss.exe`.
+- Windows Subsystem (`csrss.exe`)
+	- Windows Subsystem process
+- Winlogon (`winlogon.exe`)
+	- Allows interactive logon.
+	- Captures Ctrl+Alt+Del sequence.
+- Service Control Manager (SCM)
+	- Manages services (start, stop, pause)
+- Local Security Authentication Service (LSASS.exe)
+	- Authenticates users using security providers.
+- Secure Kernel
+	- Only available when using virtualization based security.
+- Memory Compression
+	- Hidden from task-manager.
+	- Represents compressed memory.
+- Registry
+	- Manages registry hives.

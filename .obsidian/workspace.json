@@ -4,19 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "609490abbccf6811",
+        "id": "43f35f77323d196d",
         "type": "tabs",
         "children": [
           {
-            "id": "ded0bea4235b5316",
+            "id": "9ab48202c81ba873",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Windows/Windows Internals/Architecture/System Processes.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "System Processes"
+            }
+          },
+          {
+            "id": "5b6eefc2c7de9ca3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows Internals/Architecture/Debugging Windows.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Debugging Windows"
             }
           }
         ]
@@ -38,8 +54,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "starred"
             }
           },
           {
@@ -70,7 +93,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -93,15 +118,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
-                "collapseAll": true,
-                "extraContext": true,
+                "file": "Windows/Windows Internals/Architecture/Debugging Windows.md",
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Debugging Windows"
             }
           },
           {
@@ -110,10 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Binary Exploitation/assembly/amd64.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from amd64"
             }
           },
           {
@@ -124,7 +153,9 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -133,8 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "file": "Initial Access/Payloads.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Payloads"
             }
           },
           {
@@ -146,7 +182,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ]
@@ -158,6 +196,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -166,54 +205,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ded0bea4235b5316",
+  "active": "9ab48202c81ba873",
   "lastOpenFiles": [
-    "Windows/Windows Internals/Uncategorized/Policies.md",
-    "Windows/Windows Internals/Security/User Account Control.md",
-    "Windows/Windows Internals/Uncategorized/Privileges.md",
-    "Windows/Windows Internals/Uncategorized/SID.md",
-    "Windows/Windows Internals/Security/SID.md",
-    "Active Directory/Persistence/SID History.md",
-    "Active Directory/Persistence/Custom SSP.md",
-    "Active Directory/Privilege Escalation/Constrained Delegation.md",
-    "README.md",
-    "Active Directory/Protocols/MSRPC.md",
-    "Active Directory/Protocols/SMB.md",
-    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
-    "Windows/Windows Internals/Security/Elevation.md",
-    "Windows/System Programming/Fundamentals.md",
-    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
+    "Windows/Windows Internals/Architecture/Achitecture.md",
+    "Windows/Windows Internals/Architecture/System Processes.md",
+    "Windows/Windows Internals/Architecture/Debugging Windows.md",
+    "Windows/Windows Internals/Architecture/Sessions.md",
+    "Windows/Windows Internals/Architecture/Subsystems.md",
+    "Windows/Windows Internals/Architecture/Versions.md",
+    "Windows/Windows Internals/Architecture/Win32 API.md",
+    "Low Level Stuff/Debuggers/Windbg Cheatsheet.md",
+    "Low Level Stuff/Reverse Engineering.md",
+    "Low Level Stuff/Computer Architecture.md",
+    "Low Level Stuff/Debuggers/GDB Cheatsheet.md",
+    "Low Level Stuff/Assembly/amd64.md",
+    "Low Level Stuff/Assembly/arm.md",
+    "Windows/Windows Internals/Architecture/_assets/call_flow.png",
     "Windows/Windows Enumeration.md",
-    "Windows/Windows Internals/Uncategorized/WMI.md",
-    "Windows/Windows Internals/Uncategorized/SysInternals.md",
-    "Windows/Windows Internals/Uncategorized/DPAPI.md",
-    "Windows/Windows Internals/System Architecture/Operating System Model.md",
-    "Windows/Windows Internals/System Architecture/Architecture Overview.md",
-    "Windows/Windows Internals/Security/Security Descriptor.md",
-    "Windows/Windows Internals/Security/Privilege.md",
-    "Windows/Windows Internals/Security/Integrity Levels.md",
+    "index.md",
+    "readme.md",
+    "index.md~",
+    "Low Level Stuff/Assembly/_assets/naving_convention.png",
+    "Low Level Stuff/_assets/endianness.md",
+    "Low Level Stuff/_assets/endianness.png",
+    "Windows/Windows Internals/Process & Jobs/Process.md",
+    "Windows/Windows Internals/Process & Jobs/_assets/sys_arch2.png",
+    "Windows/Windows Internals/Architecture/_assets/architecture.png",
+    "Windows/Windows Internals/Architecture/_assets",
+    "Windows/Windows Internals/Process & Jobs/_assets/sys_arch1.png",
+    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
+    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
     "Windows/Windows Internals/Security/Access Token.md",
-    "Windows/Powershell/Detections & Bypass.md",
-    "Windows/Windows Internals/Process & Jobs/_assets/proc_creation.png",
+    "Initial Access/Payloads.md",
+    "Active Directory/Credential Dumping/LSASS.md",
+    "Active Directory/Credential Dumping/Local Credentials.md",
+    "Active Directory/Credential Dumping/LAPS.md",
+    "Active Directory/Credential Dumping/Domain Controller.md",
+    "Low Level Stuff/Assembly/_assets/all_registers.png",
+    "c.c~",
+    "a.out",
+    "c.c",
+    "Low Level Stuff/devtools",
+    "Low Level Stuff/Debuggers",
     "Windows/Windows Internals/Security/_assets/elevation.png",
-    "Windows/Windows Internals/Security/_assets",
-    "Windows/Windows Internals/Process & Jobs/_assets",
-    "Windows/System Programming/_assets/sys_arch2.png",
-    "Windows/System Programming/_assets",
-    "Windows/System Programming/_assets/sys_arch1.png",
-    "Windows/Windows Internals/Uncategorized/_assets/reg2.png",
-    "Windows/Windows Internals/Uncategorized/_assets/reg1.png",
-    "Windows/Windows Internals/Threads/_assets/wmi.png",
-    "Windows/Windows Internals/Threads/_assets",
-    "Windows/Windows Internals/Uncategorized/_assets/wmi.png",
-    "_attachments/Pasted image 20221227143012.png",
-    "Active Directory/Domain Enumeration/Powershell/_assets/find_local_admin.png",
-    "Windows/Windows Internals/Uncategorized/_assets",
-    "Active Directory/AD Concepts/Untitled",
-    "Active Directory/AD Concepts/_assets",
-    "Active Directory/Domain Enumeration/Powershell/_assets",
-    "Windows/Powershell",
-    "Wireless/Wifi",
+    "Binary Exploitation/assembly/_assets/Pasted image 20241021135103.png",
+    "Low Level Stuff/Assembly/_assets",
+    "Low Level Stuff/Assembly",
+    "Low Level Stuff/_assets",
+    "Windows/Windows Internals/Process & Jobs/_assets/proc_creation.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

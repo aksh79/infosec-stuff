@@ -33,6 +33,8 @@
 ---
 # Native DLLs
 - This is what `NTDLL.dll` implements and all subsystem APIs calls into this dll.
-- Lowest user mode DLL.
+- Lowest user mode DLL (`syscall` is executed here).
 - Undocumented.
-- 
+- Contains image loader, heap manager etc.
+- Also contains implementation of `memset()` `printf()` etc.
+![](_assets/call_flow.png)

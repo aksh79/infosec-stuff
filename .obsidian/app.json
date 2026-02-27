@@ -14,5 +14,7 @@
   "showFrontmatter": false,
   "alwaysUpdateLinks": true,
   "newLinkFormat": "relative",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "spellcheck": false,
+  "defaultViewMode": "preview"
 }

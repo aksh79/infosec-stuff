@@ -1,0 +1,13 @@
+- Session is a group of processes sharing a Desktop/Namespace.
+- One process maps to one session and can never change.
+- Windows starts with two sessions:
+	- 0 - system services and process.
+	- 1 - first logon session.
+A session has:
+- Windows Station (usually 1 per session named 'winsta0')
+	- Desktops (multiple) (winlogon creates two by default - one main desktop and one ctrl+alt+del window)
+		- Application Windows (A lot)
+		- Menus
+		- Hooks
+	- Clipboard
+	- Atom Table 
