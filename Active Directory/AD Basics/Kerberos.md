@@ -24,8 +24,8 @@
 ### PAC
 The `Privilege Attribute Certificate` contains the authorization data.
 PAC Contains:
-- The Client Domain: Domain and [SID](../../Windows/Windows%20Internals/Uncategorized/SID.md) of the domain.
-- The Client User: Username and [SID](../../Windows/Windows%20Internals/Uncategorized/SID.md) of the user.
+- The Client Domain: Domain and [SID 1](../../Windows/Windows%20Internals/Security/SID%201.md) of the domain.
+- The Client User: Username and [SID 1](../../Windows/Windows%20Internals/Security/SID%201.md) of the user.
 - The Client Group: The groups and RIDs of the groups that the users belongs to.
 - Other Groups: Other SIDs that references to non-domain groups. 
 The PAC also contains several signatures to maintain the integrity of the PAC.

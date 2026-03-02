@@ -13,29 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Internals/Architecture/System Processes.md",
+                "file": "Windows/Windows Internals/Process & Jobs/Process Creation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System Processes"
+              "title": "Process Creation"
             }
           },
           {
-            "id": "5b6eefc2c7de9ca3",
+            "id": "9c74401c5bb4c664",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Internals/Architecture/Debugging Windows.md",
+                "file": "Windows/Windows Internals/Process & Jobs/Data Structures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Debugging Windows"
+              "title": "Data Structures"
+            }
+          },
+          {
+            "id": "f08b6fe6274d52b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Low Level Stuff/Debuggers/Windbg Cheatsheet.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Windbg Cheatsheet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,42 +220,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ab48202c81ba873",
+  "active": "9c74401c5bb4c664",
   "lastOpenFiles": [
-    "Windows/Windows Internals/Architecture/Achitecture.md",
-    "Windows/Windows Internals/Architecture/System Processes.md",
-    "Windows/Windows Internals/Architecture/Debugging Windows.md",
-    "Windows/Windows Internals/Architecture/Sessions.md",
-    "Windows/Windows Internals/Architecture/Subsystems.md",
-    "Windows/Windows Internals/Architecture/Versions.md",
+    "Windows/Windows Internals/Architecture/_assets/Pasted image 20260228031618.png",
+    "Windows/Windows Internals/Process & Jobs/Data Structures.md",
+    "Windows/Windows Internals/Process & Jobs/DLLs.md",
+    "Windows/Windows Internals/Process & Jobs/Process.md",
+    "Windows/Windows Internals/Process & Jobs/Process Creation.md",
     "Windows/Windows Internals/Architecture/Win32 API.md",
     "Low Level Stuff/Debuggers/Windbg Cheatsheet.md",
+    "Windows/Windows Internals/Architecture/Debugging Windows.md",
+    "Windows/Windows Internals/Security/User Account Control.md",
+    "Windows/Windows Internals/System Architecture/Operating System Model.md",
+    "Windows/Windows Internals/Architecture/Achitecture.md",
+    "Windows/Windows Internals/System Architecture/Architecture Overview.md",
+    "Windows/Windows Internals/Threads/Threads.md",
+    "Windows/Windows Internals/Architecture/Versions.md",
+    "Windows/Windows Internals/Architecture/System Processes.md",
+    "Windows/Windows Internals/Architecture/Subsystems.md",
+    "Windows/Windows Internals/Architecture/Sessions.md",
+    "Windows/Windows Internals/Uncategorized/SysInternals.md",
+    "Windows/Windows Internals/Security/Privilege.md",
+    "Windows/Windows Internals/Uncategorized/Privileges.md",
+    "Windows/Windows Internals/Uncategorized/WMI.md",
+    "Windows/Windows Internals/Security/SID.md",
+    "Windows/Windows Internals/Security/SID 1.md",
+    "Windows/Windows Internals/Untitled.md",
     "Low Level Stuff/Reverse Engineering.md",
     "Low Level Stuff/Computer Architecture.md",
-    "Low Level Stuff/Debuggers/GDB Cheatsheet.md",
-    "Low Level Stuff/Assembly/amd64.md",
-    "Low Level Stuff/Assembly/arm.md",
     "Windows/Windows Internals/Architecture/_assets/call_flow.png",
-    "Windows/Windows Enumeration.md",
-    "index.md",
-    "readme.md",
     "index.md~",
     "Low Level Stuff/Assembly/_assets/naving_convention.png",
-    "Low Level Stuff/_assets/endianness.md",
     "Low Level Stuff/_assets/endianness.png",
-    "Windows/Windows Internals/Process & Jobs/Process.md",
     "Windows/Windows Internals/Process & Jobs/_assets/sys_arch2.png",
     "Windows/Windows Internals/Architecture/_assets/architecture.png",
     "Windows/Windows Internals/Architecture/_assets",
     "Windows/Windows Internals/Process & Jobs/_assets/sys_arch1.png",
-    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
-    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
-    "Windows/Windows Internals/Security/Access Token.md",
-    "Initial Access/Payloads.md",
-    "Active Directory/Credential Dumping/LSASS.md",
-    "Active Directory/Credential Dumping/Local Credentials.md",
-    "Active Directory/Credential Dumping/LAPS.md",
-    "Active Directory/Credential Dumping/Domain Controller.md",
     "Low Level Stuff/Assembly/_assets/all_registers.png",
     "c.c~",
     "a.out",
@@ -252,7 +267,6 @@
     "Low Level Stuff/Assembly/_assets",
     "Low Level Stuff/Assembly",
     "Low Level Stuff/_assets",
-    "Windows/Windows Internals/Process & Jobs/_assets/proc_creation.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

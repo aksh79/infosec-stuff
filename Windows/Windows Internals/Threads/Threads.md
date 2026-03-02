@@ -1,0 +1,16 @@
+- Entity that is schedule by the kernel to execute code on the processor 
+- A thread contains:
+	- State of CPU registers
+	- Current access mode (user mode or kernel mode)
+	- Each user mode has two stacks - One in user space and one in kernel space
+	- Thread Local Storage (TLS) - User mode mechanism to store data on per thread basis.
+	- Access Token (Optional) - by default, thread use default access token of the user, but sometimes the process needs to impersonate someone. 
+	- Message queue and Windows (Optional) - Usually a thread is a CPU thread or an IO thread. But if the process creates a windows, the thread handling the window automatically gets a message queue. The thread sends data of everything happening on the window
+	- Priority - A number between 0 and 31. Specifies the priority of the thread.
+	- State:
+		- Running - Thread is currently executing.
+		- Ready - Wants to execute code but CPU is busy running other threads.
+		- Waiting - Thread doesn't want to execute, as it is waiting for some data or IO processing to complete.
+- Thread Access Modes:
+	- User Mode - access to non-operating system code and data, cannot crash system.
+	- Kernel Mode - Privileged mode, acess to all resources, can crash system.

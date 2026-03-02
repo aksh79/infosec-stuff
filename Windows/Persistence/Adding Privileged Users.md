@@ -42,7 +42,7 @@ Set-PSSessionconfiguration -Name Microsoft.Powershell -showSecurityDescriptorUI
 ```
 
 ### RID hijacking
-[SID](Windows/Windows%20Internals/Uncategorized/SID)
+[SID 1](../Windows%20Internals/Security/SID%201.md)
 - Changing the effective RID of a user to RID of an administrator so that when the user logs in, it will have the same access tokens as an administrator.
 - Effective RID is stored in `F` key at:
 ```cmd

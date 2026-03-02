@@ -15,5 +15,6 @@
 - Local Kernel Mode Debugging.
 	- Debugging the current machine.
 	- Limited debug functionality - cannot set breakpoints.
+	- Can be enabled with `bcdedit -debug on`
 - Remote Kernel Mode Debugging.
 	- Need to have two windows instance - debugger & debugee. 
